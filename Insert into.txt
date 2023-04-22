@@ -1,0 +1,4 @@
+insert into clientes (clie_nombre,clie_telefono,clie_direccion) values ('Mateo','3446 394573','Barcelona'), ('Martin','3446 3465849','Moreno'), ('Gustavo','3446 763927','Almeida'), ('Lucas','3446 458218','Gran Hermano')
+
+insert into facturas(fact_fecha,fact_clientes_ID) values ('25/8/19',1), ('26/9/21',2), ('15/1/23',3), ('30/3/23',4)
+select * from clientes
