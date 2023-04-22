@@ -1,0 +1,25 @@
+create table ventas(
+vent_ID int identity(1,1) not null primary key,
+vent_prod_ID int not null,
+vent_facturas_ID int not null,
+vent_cantidad int not null,
+)
+
+create table productos(
+prod_ID int identity(1,1) not null primary key,
+prod_detalles varchar(1000) not null,
+prod_proveedor_ID int not null,
+)
+
+create table facturas(
+fact_ID int identity(1,1) not null primary key,
+fact_fecha varchar(1000) not null,
+fact_clientes_ID int not null,
+)
+
+create table clientes(
+clie_ID int identity(1,1) not null primary key,
+clie_nombre varchar(1000) not null,
+clie_direccion  varchar(1000) not null,
+clie_telefono  varchar(1000) not null,
+)
