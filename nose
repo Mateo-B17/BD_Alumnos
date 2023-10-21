@@ -1,0 +1,30 @@
+create table alumnos(
+alum_id int identity(1,1) not null primary key,
+alum_nombre varchar(255) not null,
+alum_apellido varchar(255) not null,
+alum_email varchar(255)not null,
+alum_telefono int not null,
+alum_DNI int not null
+)
+insert into alumnos(alum_nombre,alum_apellido,alum_email,alum_telefono,alum_DNI)values ('Mateo','Barello','mateobgette17@gmail.com','3446 394573','46603008')
+insert into alumnos(alum_nombre,alum_apellido,alum_email,alum_telefono,alum_DNI)values ('Marcos','Zotelo','marcoszotelo@gmail.com','3446 542155','46521465')
+insert into alumnos(alum_nombre,alum_apellido,alum_email,alum_telefono,alum_DNI)values ('Aramis','Terza','aramisterza@gmail.com','3446 451237','46562314')
+insert into alumnos(alum_nombre,alum_apellido,alum_email,alum_telefono,alum_DNI)values ('Tomas','Giachello','tomasgiachello@gmail.com','3446 794613','46451872')
+insert into alumnos(alum_nombre,alum_apellido,alum_email,alum_telefono,alum_DNI)values ('Valentin','Fuentes','valentinfuentes@gmail.com','3446 326598','46659128')
+
+create table usuario(
+usua_id int identity(1,1) not null primary key,
+usua_usuario varchar(255) not null,
+usua_apellido varchar(255) not null
+)
+
+Create Procedure SP_validar_usuario (@nombre  varchar(255),
+@apellido  varchar(255),
+@email  varchar(255),
+@telefono int,
+@DNI  int,
+)
+as
+begin
+Insert Into alumnos(alum_nombre,alum_apellido,alum_email,alum_telefono,alum_DNI)
+End
